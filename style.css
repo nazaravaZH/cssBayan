@@ -37,36 +37,57 @@ body{
     border-bottom: 1px solid #495db0;
     position: static;
   }
+  .caret{
+    opacity: 0;
+  }
+  /* section:hover {
+    max-height: 250px;
+  } */
   section {
     max-height: 0;
     overflow: hidden;
-    transition: 0.7s ease;
+    /* transition: 2s ease; */
     position: static;
+    /* transition: max-height 1.5s; */
   }
    section img {
     width:100%;
     padding:0.5em 2em;
-    transition: 0.7s ease;
+    /* transition: 2s ease; */
   }
   label:hover ~ section {
     display: block;
     cursor: pointer;
     max-height: 100vh;
-    transition: 0.7s ease;
+    transition: 2s ease;
+  }
+  /* input:checked section {
+    transition: 2s ease;
+    max-height: 200px;
+  } */
+  input:checked ~ section {
+    transition: 2s ease;
   }
   .markers:checked + label+ section {
     max-height: 100%;
+    transition: max-height 1.5s;
   }
   input:checked ~label>.caret {
     transform: rotate(180deg);
     transition: 0.5s;
   }
+  .accordion:hover .caret{
+    opacity: 1;
+  }
   .accordion:hover .title{
     color:black;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   input:checked ~label{
     color:black;
     transition: 0.5s ease;
+  }
+  input:checked {
+    
   }
 
