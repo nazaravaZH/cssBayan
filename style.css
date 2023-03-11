@@ -21,6 +21,7 @@ body{
     height: auto;
     border: 1px solid #495db0;
     position:static;
+    color:blue;
 }
 .markers {
     display: none;
@@ -51,6 +52,12 @@ body{
   input:checked ~label>.caret {
     transform: rotate(180deg);
     transition: 0.5s;
+  }
+  .accordion:hover .title{
+    color:black;
+  }
+  input:checked ~label{
+    color:black;
   }
 
   
