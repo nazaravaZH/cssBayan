@@ -12,7 +12,7 @@ body{
     max-width: 30vw;
     margin: 0 auto; 
     padding:0.5em 1em;
-    text-align: center;
+    text-align: center; 
 }
 .accordion{
     margin: 0 auto;
@@ -22,7 +22,18 @@ body{
     border: 1px solid #495db0;
     position:static;
     color:blue;
+    font-weight: 600;
 }
+/* .accordion .content{
+  padding: 0 30px;
+  color: rgba(0, 0, 0, 0);
+  background-color: #BFE2FF;
+  transition: color 1s, padding 1s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+}
+.acordion label {
+  transition: color 1s;
+} */
 .markers {
     display: none;
   }
@@ -34,13 +45,13 @@ body{
     justify-content: space-between;
     cursor: pointer;
     border-bottom: 1px solid #495db0;
-    transition: all 0.5s
+    /* transition: all 0.3s ease; */
   }
   .content {
     max-height: 0;
     overflow: hidden;
     position:static;
-    /* transition: all 0.3s; */
+    /* transition: all 0.3s ease; */
   }
   .content img {
     width:100%;
@@ -55,9 +66,24 @@ body{
   }
   .accordion:hover .title{
     color:black;
+    transition: 0.3s;
   }
   input:checked ~label{
     color:black;
+    transition: 0.3s;
   }
+  input:checked ~.content {
+    transition: all 0.3s ease !important;
+  }
+  /* .accordion section{
+    position: relative;
+    transition: 
+        height 0.5s ease-in-out, 
+        box-shadow 0.5s linear;
+  }
+  .accordion input:checked ~ section{
+    transition: 
+        height 0.5s ease-in-out, 
+        box-shadow 0.5s linear;
+} */
 
-  
