@@ -29,13 +29,20 @@ body{
   }
  label {
     background: #fff;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     font-size: 1em;
     justify-content: space-between;
     cursor: pointer;
     border-bottom: 1px solid #495db0;
     position: static;
+  }
+  .click{
+  display: flex;
+  flex-direction: column;
+  }
+  .name{
+    border-bottom: none;
   }
   .caret{
     opacity: 0;
