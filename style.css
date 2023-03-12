@@ -43,7 +43,7 @@ body{
   section {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1.5s;
+    transition: all 1.5s ease !important;
   }
    section img {
     width:100%;
@@ -52,18 +52,12 @@ body{
   label:hover ~ section {
     display: block;
     cursor: pointer;
-    max-height: 100vh;
-    transition: 1.5s ease;
+    max-height: 30rem;
+    transition: all easy-out 1.5s;
   }
   input:checked+label+section{
-    max-height: 100vh;
-    transition: 1.5s ease;
-  }
-  .markers:checked + section {
-    max-height: 450vh;
-    overflow: visible;
-    transition: 1.5s ease;
-    transition: max-height 1.5s;
+    max-height: 30rem;
+    transition: all easy-out 1.5s ;
   }
   input:checked ~label>.caret {
     transform: rotate(180deg);
